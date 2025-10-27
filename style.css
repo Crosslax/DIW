@@ -150,7 +150,9 @@ nav, main {
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
+        padding: 10px;
     }
+    
 
     nav>p {
         margin-left: 0;
