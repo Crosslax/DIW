@@ -145,6 +145,7 @@ footer>button{
     margin-left: 0;
     margin-right: 0;
     width: 95%;
+    background-color: antiquewhite;
 }
 nav, main {
         flex-basis: auto; /* Permite que los elementos tomen el ancho completo */
