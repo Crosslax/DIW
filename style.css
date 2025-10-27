@@ -138,27 +138,34 @@ footer>button{
 }
 
 
-
 @media (max-width: 600px) {
-.contenedor {
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    width: 95%;
-    background-color: antiquewhite;
-}
-nav, main {
-        flex-basis: auto; /* Permite que los elementos tomen el ancho completo */
-        width: 100%; /* Ocupa el 95% del ancho del contenedor */
-        margin-left: 0;
-        margin-right: 0;
+    .contenedor {
+        flex-direction: column;
+        width: 95%; /* 95% de ancho para el contenedor */
+        margin: 10px auto; /* Centra el contenedor horizontalmente */
+        padding: 0; /* Elimina el padding para que los elementos internos manejen su propio espacio */
     }
 
-    header,
-    footer {
-        width: 95%; /* Ocupa el 95% del ancho del contenedor */
-        padding: 10px; /* Reduce el padding para pantallas pequeñas */
-        margin-left: 0;
-        margin-right: 0;
+    nav, main, header, footer {
+        width: 100%; /* Ocupan todo el ancho del contenedor padre (.contenedor) */
+        margin: 10px 0; /* Margen superior/inferior, sin margen lateral */
+        padding: 15px; /* Padding interior ajustado */
+    }
+
+    /* Ajuste para los elementos <p> dentro de <nav> */
+    nav {
+        margin-right: 0; /* Corrige el margen derecho del nav */
+    }
+    nav > p {
+        margin: 0; /* Elimina los márgenes de los lados para que ocupen todo el ancho del <nav> */
+        border-radius: 0;
+    }
+    nav > p:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    nav > p:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
