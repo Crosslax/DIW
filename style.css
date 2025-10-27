@@ -144,18 +144,13 @@ footer>button{
 }
 
 
-nav, main {
+nav, main, footer, header {
         flex: 1 1 100%;
-        width: 100%;
+        width: 99%;
         box-sizing: border-box;
         margin-left: 0;
         margin-right: 0;
         padding: 10px;
     }
-    
 
-    nav>p {
-        margin-left: 0;
-        margin-right: 0;
-    }
 }
