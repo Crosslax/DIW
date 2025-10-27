@@ -141,6 +141,9 @@ footer>button{
 @media (max-width: 600px) {
 .contenedor {
     flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
 }
 
 
