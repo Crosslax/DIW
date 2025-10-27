@@ -148,13 +148,15 @@ footer>button{
 nav, main {
         flex-basis: auto; /* Permite que los elementos tomen el ancho completo */
         width: 95%; /* Ocupa el 95% del ancho del contenedor */
-        margin: 10px auto; /* Centra el elemento en la pantalla y añade margen vertical */
+        margin-left: 0;
+        margin-right: 0;
     }
 
     header,
     footer {
         width: 95%; /* Ocupa el 95% del ancho del contenedor */
-        margin: 10px auto; /* Centra el elemento en la pantalla */
         padding: 10px; /* Reduce el padding para pantallas pequeñas */
+        margin-left: 0;
+        margin-right: 0;
     }
 }
