@@ -144,10 +144,11 @@ footer>button{
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
+    width: 95%;
 }
 nav, main {
         flex-basis: auto; /* Permite que los elementos tomen el ancho completo */
-        width: 95%; /* Ocupa el 95% del ancho del contenedor */
+        width: 100%; /* Ocupa el 95% del ancho del contenedor */
         margin-left: 0;
         margin-right: 0;
     }
