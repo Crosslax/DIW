@@ -137,16 +137,17 @@ footer>button{
 
 }
 
-
-    @media (max-width: 600px) {
-
+@media (max-width: 600px) {
+    * {
+    box-sizing: border-box;
+}
     /* Centra y ajusta el ancho de todos los contenedores principales */
     header,
     .contenedor,
     footer {
-        width: 95%; /* 95% de ancho para todos los contenedores */
-        margin: 10px auto; /* Centra el elemento horizontalmente y añade margen vertical */
-        padding: 15px; /* Ajusta el padding interno para móviles */
+        width: 95%; /* 95% de ancho para todos los contenedores principales */
+        margin: 10px auto; /* Centra el elemento horizontalmente */
+        /* El padding se gestiona ahora dentro del ancho del 95% gracias a border-box */
     }
 
     /* Aplica el diseño en columna para el contenedor flex */
@@ -154,21 +155,18 @@ footer>button{
         flex-direction: column; /* Apila `nav` y `main` verticalmente */
     }
 
-    /* Asegura que la navegación y el contenido principal ocupen todo el ancho de su padre (.contenedor) */
+    /* Asegura que la navegación y el contenido principal ocupen el 100% del ancho de su padre (.contenedor) */
     nav,
     main {
         width: 100%;
         margin: 0; /* Elimina márgenes extra dentro del contenedor */
-        padding: 0; /* Elimina padding extra para que el padding del padre tenga efecto */
     }
 
-    /* Ajuste para los párrafos dentro de la navegación */
+    /* Ajuste de márgenes y bordes redondeados en la navegación */
     nav > p {
         margin: 0;
         border-radius: 0;
     }
-
-    /* Redefine los bordes redondeados para la navegación */
     nav > p:nth-child(1) {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
