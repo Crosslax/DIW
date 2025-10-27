@@ -138,29 +138,37 @@ footer>button{
 }
 
 
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
+    /* Centra y ajusta el ancho de todos los contenedores principales */
+    header,
+    .contenedor,
+    footer {
+        width: 95%; /* 95% de ancho para todos los contenedores */
+        margin: 10px auto; /* Centra el elemento horizontalmente y añade margen vertical */
+        padding: 15px; /* Ajusta el padding interno para móviles */
+    }
+
+    /* Aplica el diseño en columna para el contenedor flex */
     .contenedor {
-        flex-direction: column;
-        width: 95%; /* 95% de ancho para el contenedor */
-        margin: 10px auto; /* Centra el contenedor horizontalmente */
-        padding: 0; /* Elimina el padding para que los elementos internos manejen su propio espacio */
+        flex-direction: column; /* Apila `nav` y `main` verticalmente */
     }
 
-    nav, main, header, footer {
-        width: 100%; /* Ocupan todo el ancho del contenedor padre (.contenedor) */
-        margin: 10px 0; /* Margen superior/inferior, sin margen lateral */
-        padding: 15px; /* Padding interior ajustado */
+    /* Asegura que la navegación y el contenido principal ocupen todo el ancho de su padre (.contenedor) */
+    nav,
+    main {
+        width: 100%;
+        margin: 0; /* Elimina márgenes extra dentro del contenedor */
+        padding: 0; /* Elimina padding extra para que el padding del padre tenga efecto */
     }
 
-    /* Ajuste para los elementos <p> dentro de <nav> */
-    nav {
-        margin-right: 0; /* Corrige el margen derecho del nav */
-    }
+    /* Ajuste para los párrafos dentro de la navegación */
     nav > p {
-        margin: 0; /* Elimina los márgenes de los lados para que ocupen todo el ancho del <nav> */
+        margin: 0;
         border-radius: 0;
     }
-    nav > p:first-child {
+
+    /* Redefine los bordes redondeados para la navegación */
+    nav > p:nth-child(1) {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
