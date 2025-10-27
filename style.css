@@ -145,9 +145,7 @@ footer>button{
 
 
 nav, main, footer, header {
-        flex: 1 1 100%;
-        width: 99%;
-        box-sizing: border-box;
+        flex: 1 1 98%;
         margin-left: 0;
         margin-right: 0;
         padding: 10px;
