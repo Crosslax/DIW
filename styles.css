@@ -190,7 +190,9 @@ footer>button{
 }
 
 @media(max-width: 600px) {
-  
+  body{
+    width: 97%;
+  }
 
     header > h1 {
         font-size: 24px;
