@@ -190,9 +190,6 @@ footer>button{
 }
 
 @media(max-width: 600px) {
-  body{
-    width: 97%;
-  }
 
     header > h1 {
         font-size: 24px;
@@ -201,10 +198,13 @@ footer>button{
 
     header {
       margin: 0;
+       width: 95%;
+
     }
     .contenedor {
         flex-direction: column;
         margin: 0 ;
+      
     }
     nav {
         display: flex;
@@ -214,12 +214,12 @@ footer>button{
     }
      label {
         display: block;
-        width: 100%;
+         width: 95%;
       
         margin: 0;
     }
     nav > ul {
-        width: 100%;
+        width: 95%;
        
         margin: 0;
     }
@@ -227,5 +227,6 @@ footer>button{
 
     main, footer {
         margin: 0;
+         width: 95%;
     }
 }
