@@ -201,22 +201,16 @@ footer>button{
 
 }
 
-@media(max-width: 600px) {
+@media(max-width:600px){
 
-    header > h1 {
-        font-size: 24px;
-       
-    }
-
-    header {
+    
+   header {
       margin: 0;
-       width: 100%;
-
+      flex-basis: auto;
     }
     .contenedor {
         flex-direction: column;
         margin: 0 ;
-      
     }
     nav {
         display: flex;
@@ -226,24 +220,17 @@ footer>button{
     }
      label {
         display: block;
-         width: 100%;
+        width: 100%;
+      
         margin: 0;
-       
     }
     nav > ul {
         width: 100%;
        
         margin: 0;
-       
     }
-
-    nav>ul>li:last-child{
-    margin-bottom: 20px;
-}
 
     main, footer {
         margin: 0;
-         width: 100%;
-        
     }
-}
+  }
