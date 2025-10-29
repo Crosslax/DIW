@@ -189,18 +189,41 @@ footer>button{
 
 }
 
+@media(max-width: 600px) {
+  
 
-@media (max-width: 60opx) {
+    header > h1 {
+        font-size: 24px;
+       
+    }
+
+    header {
+      margin: 0;
+    }
     .contenedor {
-        flex-direction: column; /* Volver al diseño en fila para escritorio */
+        flex-direction: column;
+        margin: 0 ;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: auto;
+    }
+     label {
+        display: block;
+        width: 100%;
+      
+        margin: 0;
+    }
+    nav > ul {
+        width: 100%;
+       
+        margin: 0;
     }
 
-    nav, nav>ul, main, header, footer {
-        flex-basis: 100%;
+
+    main, footer {
+        margin: 0;
     }
-
-    input:checked  ~ ul{
-  position: absolute;
-}
-
 }
