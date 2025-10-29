@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Página de recomendaciones de una web dedicada a personas afectadas con afasia." >
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="author" href="humans.txt" >
     <title>Hablando de afasia</title>
     <script src="script.js"></script>
+
 </head>
 <body>
     <header>
@@ -13,21 +20,70 @@
     </header>
     <div class="contenedor">
         <nav>
-            <p><a href="index.html">Página principal</a></p>
-            <p><a href="afasia.html">¿Qué es la afasia?</a></p>
-            <p class="activo"><a href="recomendaciones.html">Recomendaciones</a></p>
-            <p><a href="recursos.html">Recursos</a></p>
+            <input type="checkbox" id="menu">
+            <label for="menu"> Menú </label>
+            <ul>
+                <li><a href="index.html">Página principal</a></li>
+                <li><a href="afasia.html">¿Qué es la afasia?</a></li>
+                <li class="activo"><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+            </ul>
         </nav>
         <main>
             <h1>Recomendaciones</h1>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
-            <p>Main body</p>
+            <ol>
+                <li>
+                    Mantener una comunicación clara y sencilla.
+                    <ul>
+                        <li>Hay que hablar despacio y de manera clara, pero sin exagerar ni infantilizar. </li>
+                        <li>Es recomendable el uso de frases cortas y simples, y repetir la información si es necesario, así como mantener el contacto visual, ya que facilita la atención.</li>
+                    </ul>
+                </li>
+                <li>
+                    Escuchar con paciencia. 
+                    Es importante dar tiempo al paciente para que se exprese, aunque a veces pueda ser frustrante. No hay que interrumpir, ni completar sus frases, a menos que lo pida.
+                </li>
+                <li>
+                    Uso de ayudas visuales como imágenes, tarjetas o gestos para ayudar a la persona a comprender y expresar ideas. 
+                    Los apoyos visuales pueden ser muy útiles para que la persona identifique objetos, acciones o emociones.
+                </li>
+                <li> 
+                    Fomentar la comunicación en todos los niveles. 
+                    Aparte del lenguaje hablado, animaremos al uso de otras formas de comunicación como la escritura, gestos, señales o tecnología asistida (sería el caso de aplicaciones de comunicación). 
+                    Una buena práctica es repetir, parafrasear o confirmar lo que la persona está tratando de decir para asegurarnos de que nos entendemos.
+                </li>
+                <li>
+                    Mantener la rutina diaria.
+                    Las personas con afasia pueden sentirse más seguras si se mantiene una rutina diaria. 
+                    Continuar participando en actividades cotidianas favorecerá su bienestar emocional y cognitivo.
+                </li>
+                <li>
+                    Involucrarse en la rehabilitación. 
+                    Si está recibiendo terapia del lenguaje, habría que acompañarle a las sesiones o participar en las actividades siguiendo las pautas de los terapeutas.
+                </li>
+                <li>
+                    Ser comprensivo y paciente. 
+                    Las personas con afasia pueden sentirse frustradas o angustiadas por su incapacidad para comunicarse de la misma manera que antes. 
+                    Hay que reconocer sus esfuerzos y mostrar empatía, evitando mostrar impaciencia o frustración, ya que esto puede aumentar su ansiedad.
+                </li>
+                <li>
+                    Promover la interacción social
+                    Adaptar las interacciones a su ritmo y organizar actividades recreativas como juegos de mesa, lectura o ver películas con personas con las que se sienta cómodo puede ser muy beneficioso.
+                </li>
+                <li>
+                    Servir como fuente de apoyo emocional constante.
+                    La afasia puede causar cambios en la autoestima y la confianza. 
+                    Hay que escuchar sus preocupaciones y sentimientos y asegurarse de que no se sienta aislado o incomprendido.
+                </li>
+                <li>
+                    Cuidarse como cuidador.
+                    Ser cuidador puede ser exigente. 
+                    Tiene la opción de buscar apoyo en grupos de familiares, amigos o profesionales. 
+                    Debe tomar descansos. 
+                    Cuidar de su salud emocional y física le permitirá estar mejor preparado para ayudar a su ser querido.
+                </li>
+            </ol>
+
             <p><a href="#">Main body</a></p>
         </main>
     </div>
