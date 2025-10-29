@@ -199,6 +199,7 @@ footer>button{
     header {
       margin: 0;
        width: 95%;
+         border-radius: 10px;
 
     }
     .contenedor {
@@ -211,22 +212,29 @@ footer>button{
         flex-direction: column;
         align-items: center;
         flex-basis: auto;
+          border-radius: 10px;
     }
      label {
         display: block;
          width: 95%;
-      
         margin: 0;
+          border-radius: 10px;
     }
     nav > ul {
         width: 95%;
        
         margin: 0;
+          border-radius: 10px;
     }
 
+    nav>ul>li:last-child{
+    margin-bottom: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;}
 
     main, footer {
         margin: 0;
          width: 95%;
+           border-radius: 10px;
     }
 }
